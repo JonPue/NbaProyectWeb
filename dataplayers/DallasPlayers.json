@@ -1,0 +1,32 @@
+[
+  {
+    "firstName": "J.J.",
+    "lastName": "Barea",
+    "playerId": 200826,
+    "teamId": 1610612742
+  },
+  {
+    "firstName": "Seth",
+    "lastName": "Curry",
+    "playerId": 203552,
+    "teamId": 1610612742
+  },
+  {
+    "firstName": "Luka",
+    "lastName": "Doncic",
+    "playerId": 1629029,
+    "teamId": 1610612742
+  },
+  {
+    "firstName": "Tim",
+    "lastName": "Hardaway Jr.",
+    "playerId": 203501,
+    "teamId": 1610612742
+  },
+  {
+    "firstName": "Kristaps",
+    "lastName": "Porzingis",
+    "playerId": 204001,
+    "teamId": 1610612742
+  }
+]

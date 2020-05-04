@@ -1,0 +1,33 @@
+[
+  {
+    "firstName": "Kevin",
+    "lastName": "Durant",
+    "playerId": 201142,
+    "teamId": 1610612751
+  },
+  {
+    "firstName": "Henry",
+    "lastName": "Ellenson",
+    "playerId": 1627740,
+    "teamId": 1610612751
+  },
+  {
+    "firstName": "Joe",
+    "lastName": "Harris",
+    "playerId": 203925,
+    "teamId": 1610612751
+  },
+  {
+    "firstName": "Kyrie",
+    "lastName": "Irving",
+    "playerId": 202681,
+    "teamId": 1610612751
+  },
+  {
+    "firstName": "DeAndre",
+    "lastName": "Jordan",
+    "playerId": 201599,
+    "teamId": 1610612751
+  }
+
+]

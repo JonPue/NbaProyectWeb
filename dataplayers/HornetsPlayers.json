@@ -1,0 +1,38 @@
+[
+  {
+    "firstName": "Cody",
+    "lastName": "Zeller",
+    "playerId": 203469,
+    "teamId": 1610612766
+  },
+  {
+    "firstName": "Dwayne",
+    "lastName": "Bacon",
+    "playerId": 1628407,
+    "teamId": 1610612766
+  },
+  {
+    "firstName": "Nicolas",
+    "lastName": "Batum",
+    "playerId": 201587,
+    "teamId": 1610612766
+  },
+  {
+    "firstName": "Miles",
+    "lastName": "Bridges",
+    "playerId": 1628970,
+    "teamId": 1610612766
+  },
+  {
+    "firstName": "Willy",
+    "lastName": "Hernangomez",
+    "playerId": 1626195,
+    "teamId": 1610612766
+  },
+  {
+    "firstName": "Terry",
+    "lastName": "Rozier",
+    "playerId": 1626179,
+    "teamId": 1610612766
+  }
+]

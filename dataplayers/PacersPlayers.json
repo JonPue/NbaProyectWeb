@@ -1,0 +1,32 @@
+[
+  {
+    "firstName": "Aaron",
+    "lastName": "Holiday",
+    "playerId": 1628988,
+    "teamId": 1610612754
+  },
+  {
+    "firstName": "Victor",
+    "lastName": "Oladipo",
+    "playerId": 203506,
+    "teamId": 1610612754
+  },
+  {
+    "firstName": "Domantas",
+    "lastName": "Sabonis",
+    "playerId": 1627734,
+    "teamId": 1610612754
+  },
+  {
+    "firstName": "Myles",
+    "lastName": "Turner",
+    "playerId": 1626167,
+    "teamId": 1610612754
+  },
+  {
+    "firstName": "T.J.",
+    "lastName": "Warren",
+    "playerId": 203933,
+    "teamId": 1610612754
+  }
+]

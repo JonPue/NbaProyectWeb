@@ -1,0 +1,32 @@
+[
+  {
+    "firstName": "Stephen",
+    "lastName": "Curry",
+    "playerId": 201939,
+    "teamId": 1610612744
+  },
+  {
+    "firstName": "Klay",
+    "lastName": "Thompson",
+    "playerId": 202691,
+    "teamId": 1610612744
+  },
+  {
+    "firstName": "Jordan",
+    "lastName": "Poole",
+    "playerId": 1629673,
+    "teamId": 1610612744
+  },
+  {
+    "firstName": "Eric",
+    "lastName": "Paschall",
+    "playerId": 1629672,
+    "teamId": 1610612744
+  },
+  {
+    "firstName": "Kevon",
+    "lastName": "Looney",
+    "playerId": 1626172,
+    "teamId": 1610612744
+  }
+]

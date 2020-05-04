@@ -1,0 +1,32 @@
+[
+  {
+    "firstName": "Bogdan",
+    "lastName": "Bogdanovic",
+    "playerId": 203992,
+    "teamId": 1610612762
+  },
+  {
+    "firstName": "Bojan",
+    "lastName": "Bogdanovic",
+    "playerId": 202711,
+    "teamId": 1610612762
+  },
+  {
+    "firstName": "Mike",
+    "lastName": "Conley",
+    "playerId": 201144,
+    "teamId": 1610612762
+  },
+  {
+    "firstName": "Rudy",
+    "lastName": "Gobert",
+    "playerId": 203497,
+    "teamId": 1610612762
+  },
+  {
+    "firstName": "Donovan",
+    "lastName": "Mitchell",
+    "playerId": 1628378,
+    "teamId": 1610612762
+  }
+]

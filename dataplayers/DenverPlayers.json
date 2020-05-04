@@ -1,0 +1,38 @@
+[
+  {
+    "firstName": "Will",
+    "lastName": "Barton",
+    "playerId": 203115,
+    "teamId": 1610612743
+  },
+  {
+    "firstName": "Jerami",
+    "lastName": "Grant",
+    "playerId": 203924,
+    "teamId": 1610612743
+  },
+  {
+    "firstName": "Gary",
+    "lastName": "Harris",
+    "playerId": 203914,
+    "teamId": 1610612743
+  },
+  {
+    "firstName": "Nikola",
+    "lastName": "Jokic",
+    "playerId": 203999,
+    "teamId": 1610612743
+  },
+  {
+    "firstName": "Monte",
+    "lastName": "Morris",
+    "playerId": 1628420,
+    "teamId": 1610612743
+  },
+  {
+    "firstName": "Jamal",
+    "lastName": "Murray",
+    "playerId": 1627750,
+    "teamId": 1610612743
+  }
+]

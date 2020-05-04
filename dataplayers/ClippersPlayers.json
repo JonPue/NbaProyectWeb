@@ -1,0 +1,38 @@
+[
+  {
+    "firstName": "Patrick",
+    "lastName": "Beverley",
+    "playerId": 201976,
+    "teamId": 1610612746
+  },
+  {
+    "firstName": "Paul",
+    "lastName": "George",
+    "playerId": 202331,
+    "teamId": 1610612746
+  },
+  {
+    "firstName": "Kawhi",
+    "lastName": "Leonard",
+    "playerId": 202695,
+    "teamId": 1610612746
+  },
+  {
+    "firstName": "Patrick",
+    "lastName": "Patterson",
+    "playerId": 202335,
+    "teamId": 1610612746
+  },
+  {
+    "firstName": "Lou",
+    "lastName": "Williams",
+    "playerId": 101150,
+    "teamId": 1610612746
+  },
+  {
+    "firstName": "Ivica",
+    "lastName": "Zubac",
+    "playerId": ,
+    "teamId": 1610612746
+  }
+]

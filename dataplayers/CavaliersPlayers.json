@@ -1,0 +1,45 @@
+[
+  {
+  "firstName": "Kevin",
+  "lastName": "Love",
+  "playerId": 201567,
+  "teamId": 1610612739
+},
+{
+  "firstName": "Alfonzo",
+  "lastName": "McKinnie",
+  "playerId": 1628035,
+  "teamId": 1610612739
+},
+{
+  "firstName": "Larry",
+  "lastName": "Nance Jr.",
+  "playerId": 1626204,
+  "teamId": 1610612739
+},
+{
+  "firstName": "Kevin",
+  "lastName": "Porter Jr.",
+  "playerId": 1629645,
+  "teamId": 1610612739
+},
+{
+  "firstName": "Collin",
+  "lastName": "Sexton",
+  "playerId": 1629012,
+  "teamId": 1610612739
+},
+{
+  "firstName": "Tristan",
+  "lastName": "Thompson",
+  "playerId": 202684,
+  "teamId": 1610612739
+},
+{
+  "firstName": "Dylan",
+  "lastName": "Windler",
+  "playerId": 1629685,
+  "teamId": 1610612739
+}
+
+]

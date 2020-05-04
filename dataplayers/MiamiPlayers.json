@@ -1,0 +1,26 @@
+[
+  {
+    "firstName": "Jimmy",
+    "lastName": "Butler",
+    "playerId": 202710,
+    "teamId": 1610612748
+  },
+  {
+    "firstName": "Bam",
+    "lastName": "Adebayo",
+    "playerId": 1628389,
+    "teamId": 1610612748
+  },
+  {
+    "firstName": "Goran",
+    "lastName": "Dragic",
+    "playerId": 201609,
+    "teamId": 1610612748
+  },
+  {
+    "firstName": "Justise",
+    "lastName": "Winslow",
+    "playerId": 1626159,
+    "teamId": 1610612748
+  }
+]

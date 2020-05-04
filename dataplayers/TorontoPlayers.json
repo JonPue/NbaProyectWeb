@@ -1,0 +1,44 @@
+[
+  {
+    "firstName": "OG",
+    "lastName": "Anunoby",
+    "playerId": 1628384,
+    "teamId": 1610612761
+  },
+  {
+    "firstName": "Marc",
+    "lastName": "Gasol",
+    "playerId": 201188,
+    "teamId": 1610612761
+  },
+  {
+    "firstName": "Serge",
+    "lastName": "Ibaka",
+    "playerId": 201586,
+    "teamId": 1610612761
+  },
+  {
+    "firstName": "Kyle",
+    "lastName": "Lowry",
+    "playerId": 200768,
+    "teamId": 1610612761
+  },
+  {
+    "firstName": "Pascal",
+    "lastName": "Siakam",
+    "playerId": 1627783,
+    "teamId": 1610612761
+  },
+  {
+    "firstName": "Norman",
+    "lastName": "Powell",
+    "playerId": 1626181,
+    "teamId": 1610612761
+  },
+  {
+    "firstName": "Fred",
+    "lastName": "VanVleet",
+    "playerId": 1627832,
+    "teamId": 1610612761
+  }
+]

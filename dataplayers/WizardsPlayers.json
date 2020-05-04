@@ -1,0 +1,38 @@
+[
+  {
+    "firstName": "John",
+    "lastName": "Wall",
+    "playerId": 202322,
+    "teamId": 1610612764
+  },
+  {
+    "firstName": "Bradley",
+    "lastName": "Beal",
+    "playerId": 203078,
+    "teamId": 1610612764
+  },
+  {
+    "firstName": "Isaac",
+    "lastName": "Bonga",
+    "playerId": 1629067,
+    "teamId": 1610612764
+  },
+  {
+    "firstName": "Troy",
+    "lastName": "Brown Jr.",
+    "playerId": 1628972,
+    "teamId": 1610612764
+  },
+  {
+    "firstName": "Jordan",
+    "lastName": "McRae",
+    "playerId": 203895,
+    "teamId": 1610612764
+  },
+  {
+    "firstName": "Isaiah",
+    "lastName": "Thomas",
+    "playerId": 202738,
+    "teamId": 1610612764
+  }
+]

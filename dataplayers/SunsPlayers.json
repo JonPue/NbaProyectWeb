@@ -1,0 +1,38 @@
+[
+  {
+    "firstName": "Kelly",
+    "lastName": "Oubre Jr.",
+    "playerId": 1626162,
+    "teamId": 1610612756
+  },
+  {
+    "firstName": "Ricky",
+    "lastName": "Rubio",
+    "playerId": 201937,
+    "teamId": 1610612756
+  },
+  {
+    "firstName": "Dario",
+    "lastName": "Saric",
+    "playerId": 203967,
+    "teamId": 1610612756
+  },
+  {
+    "firstName": "Deandre",
+    "lastName": "Ayton",
+    "playerId": 1629028,
+    "teamId": 1610612756
+  },
+  {
+    "firstName": "Aron",
+    "lastName": "Baynes",
+    "playerId": 203382,
+    "teamId": 1610612756
+  },
+  {
+    "firstName": "Devin",
+    "lastName": "Booker",
+    "playerId": 1626164,
+    "teamId": 1610612756
+  }
+]

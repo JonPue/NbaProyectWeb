@@ -1,0 +1,26 @@
+[
+  {
+    "firstName": "Marcus",
+    "lastName": "Morris Sr.",
+    "playerId": 202694,
+    "teamId": 1610612752
+  },
+  {
+    "firstName": "Frank",
+    "lastName": "Ntilikina",
+    "playerId": 1628373,
+    "teamId": 1610612752
+  },
+  {
+    "firstName": "Elfrid",
+    "lastName": "Payton",
+    "playerId": 203901,
+    "teamId": 1610612752
+  },
+  {
+    "firstName": "Bobby",
+    "lastName": "Portis",
+    "playerId": 1626171,
+    "teamId": 1610612752
+  }
+]

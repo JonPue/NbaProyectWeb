@@ -1,0 +1,44 @@
+[
+  {
+    "firstName": "Trevor",
+    "lastName": "Ariza",
+    "playerId": 2772,
+    "teamId": 1610612758
+  },
+  {
+    "firstName": "Marvin",
+    "lastName": "Bagley III",
+    "playerId": 1628963,
+    "teamId": 1610612758
+  },
+  {
+    "firstName": "Harrison",
+    "lastName": "Barnes",
+    "playerId": 203084,
+    "teamId": 1610612758
+  },
+  {
+    "firstName": "De'Aaron",
+    "lastName": "Fox",
+    "playerId": 1628368,
+    "teamId": 1610612758
+  },
+  {
+    "firstName": "Wenyen",
+    "lastName": "Gabriel",
+    "playerId": 1629117,
+    "teamId": 1610612758
+  },
+  {
+    "firstName": "Kyle",
+    "lastName": "Guy",
+    "playerId": 1629657,
+    "teamId": 1610612758
+  },
+  {
+    "firstName": "Richaun",
+    "lastName": "Holmes",
+    "playerId": 1626158,
+    "teamId": 1610612758
+  }
+]

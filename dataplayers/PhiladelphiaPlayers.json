@@ -1,0 +1,44 @@
+[
+  {
+    "firstName": "Raul",
+    "lastName": "Neto",
+    "playerId": 203526,
+    "teamId": 1610612755
+  },
+  {
+    "firstName": "Mike",
+    "lastName": "Scott",
+    "playerId": 203118,
+    "teamId": 1610612755
+  },
+  {
+    "firstName": "Ben",
+    "lastName": "Simmons",
+    "playerId": 1627732,
+    "teamId": 1610612755
+  },
+  {
+    "firstName": "Joel",
+    "lastName": "Embiid",
+    "playerId": 203954,
+    "teamId": 1610612755
+  },
+  {
+    "firstName": "Tobias",
+    "lastName": "Harris",
+    "playerId": 202699,
+    "teamId": 1610612755
+  },
+  {
+    "firstName": "Al",
+    "lastName": "Horford",
+    "playerId": 201143,
+    "teamId": 1610612755
+  },
+  {
+    "firstName": "Kyle",
+    "lastName": "O'Quinn",
+    "playerId": 203124,
+    "teamId": 1610612755
+  }
+]

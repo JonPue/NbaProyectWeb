@@ -1,0 +1,44 @@
+[
+{
+  "firstName": "Jaylen",
+  "lastName": "Brown",
+  "playerId": 1628971,
+  "teamId": 1610612765
+},
+{
+  "firstName": "Tacko",
+  "lastName": "Fall",
+  "playerId": 1629605,
+  "teamId": 1610612738
+},
+{
+  "firstName": "Gordon",
+  "lastName": "Hayward",
+  "playerId": 202330,
+  "teamId": 1610612738
+},
+{
+  "firstName": "Enes",
+  "lastName": "Kanter",
+  "playerId": 202683,
+  "teamId": 1610612738
+},
+{
+  "firstName": "Marcus",
+  "lastName": "Smart",
+  "playerId": 203935,
+  "teamId": 1610612738
+},
+{
+  "firstName": "Jayson",
+  "lastName": "Tatum",
+  "playerId": 1628369,
+  "teamId": 1610612738
+},
+{
+  "firstName": "Kemba",
+  "lastName": "Walker",
+  "playerId": 202689,
+  "teamId": 1610612738
+}
+]

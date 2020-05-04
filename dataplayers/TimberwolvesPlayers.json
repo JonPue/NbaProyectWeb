@@ -1,0 +1,38 @@
+[
+  {
+    "firstName": "Robert",
+    "lastName": "Covington",
+    "playerId": 203496,
+    "teamId": 1610612750
+  },
+  {
+    "firstName": "Jordan",
+    "lastName": "Bell",
+    "playerId": 1628395,
+    "teamId": 1610612750
+  },
+  {
+    "firstName": "Karl-Anthony",
+    "lastName": "Towns",
+    "playerId": 1626157,
+    "teamId": 1610612750
+  },
+  {
+    "firstName": "Karl-Anthony",
+    "lastName": "Towns",
+    "playerId": 1626157,
+    "teamId": 1610612750
+  },
+  {
+    "firstName": "Andrew",
+    "lastName": "Wiggins",
+    "playerId": 203952,
+    "teamId": 1610612750
+  },
+  {
+    "firstName": "Keita",
+    "lastName": "Bates-Diop",
+    "playerId": 1628966,
+    "teamId": 1610612750
+  }
+]

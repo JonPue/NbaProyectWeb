@@ -1,0 +1,50 @@
+[
+  {
+    "firstName": "Steven",
+    "lastName": "Adams",
+    "playerId": 203500,
+    "teamId": 1610612760
+  },
+  {
+    "firstName": "Hamidou",
+    "lastName": "Diallo",
+    "playerId": 1628977,
+    "teamId": 1610612760
+  },
+  {
+    "firstName": "Danilo",
+    "lastName": "Gallinari",
+    "playerId": 201568,
+    "teamId": 1610612760
+  },
+  {
+    "firstName": "Devon",
+    "lastName": "Hall",
+    "playerId": 1628985,
+    "teamId": 1610612760
+  },
+  {
+    "firstName": "Mike",
+    "lastName": "Muscala",
+    "playerId": 203488,
+    "teamId": 1610612760
+  },
+  {
+    "firstName": "Chris",
+    "lastName": "Paul",
+    "playerId": 101108,
+    "teamId": 1610612760
+  },
+  {
+    "firstName": "Andre",
+    "lastName": "Roberson",
+    "playerId": 203460,
+    "teamId": 1610612760
+  },
+  {
+    "firstName": "Dennis",
+    "lastName": "Schroder",
+    "playerId": 203471,
+    "teamId": 1610612760
+  }
+]

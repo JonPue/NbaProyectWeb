@@ -1,0 +1,1623 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Equipos NBA JP</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <style type="text/css">
+            #logonba{
+                display: block;
+                margin: auto;
+            }
+
+            #equip{
+                display: block;
+                margin: auto;
+            }
+
+            *{
+                padding: 0px;
+                margin: 0px;
+            }
+
+            #jugad{
+                margin: auto;
+                width: 600px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            ul, ol{
+                list-style: none;
+            }
+
+            .jug li a{
+                background-color: #000;
+                color: #ffffff;
+                text-decoration: none;
+                padding: 10px 15px;
+                display: block;
+            }
+
+            .jug li a:hover{
+                background-color: purple;
+            }
+
+            .jug > li {
+                float: left;
+            }
+
+            .jug li ul{
+                display: none;
+                position: absolute;
+                min-width: 140px;
+            }
+
+            .jug li:hover > ul{
+                display: block;
+            }
+
+           .jug li ul li{
+                position: relative;
+            }
+
+            .jug li ul li ul{
+                right: -140px;
+                top: 0px;
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <img id="logonba" src="imagenes/LogoNBA.PNG" alt="nba" width="200" height="450">
+        <br>
+        <br>
+        <div id="jugad">
+            <ul class="jug">
+                <!--<li><a href="GuardarEquipo.html">Guardar equipo</a></li>
+                <li><a href="GuardarJugador.html">Guardar jugador</a></li>-->
+                <li><a href="/Php/listar.php">Mostrar equipos guardados</a></li>
+                <li><a href="/Php/listar2.php">Mostrar jugadores guardados</a></li>
+                <li><a href="">Jugadores</a>
+                    <ul>
+                        <li><a href="" onclick="GetCambios32('PhiladelphiaPlayers.json')">Sixers</a></li>
+                        <li><a href="" onclick="GetCambios33('AtlantaHawksPlayers.json')">Atlanta</a></li>
+                        <li><a href="" onclick="GetCambios34('ChicagoPlayers.json')">Bulls</a></li>
+                        <li><a href="" onclick="GetCambios35('BostonCelticsPlayers.json')">Celtics</a></li>
+                        <li><a href="" onclick="GetCambios36('HornetsPlayers.json')">Charlotte</a></li>
+                        <li><a href="" onclick="GetCambios37('CavaliersPlayers.json')">Cleveland</a></li>
+                        <li><a href="" onclick="GetCambios38('ClippersPlayers.json')">Clippers</a></li>
+                        <li><a href="" onclick="GetCambios39('DallasPlayers.json')">Dallas</a></li>
+                        <li><a href="" onclick="GetCambios40('DenverPlayers.json')">Denver</a></li>
+                        <li><a href="" onclick="GetCambios41('DetroitPlayers.json')">Detroit</a></li>
+                        <li><a href="" onclick="GetCambios42('HoustonPlayers.json')">Houston</a></li>
+                        <li><a href="" onclick="GetCambios43('JazzaPlayers.json')">Jazz</a></li>
+                        <li><a href="" onclick="GetCambios44('SacramentoPlayers.json')">King</a></li>
+                        <li><a href="" onclick="GetCambios45('KnicksPlayers.json')">Knicks</a></li>
+                        <li><a href="" onclick="GetCambios46('LakersPlayers.json')">Lakers</a></li>
+                        <li><a href="" onclick="GetCambios47('MemphisPlayers.json')">Memphis</a></li>
+                        <li><a href="" onclick="GetCambios48('MiamiPlayers.json')">Miami</a></li>
+                        <li><a href="" onclick="GetCambios49('BucksPlayers.json')">Milwau</a></li>
+                        <li><a href="" onclick="GetCambios50('BrooklynPlayers.json')">Nets</a></li>
+                        <li><a href="" onclick="GetCambios51('OrlandoPlayers.json')">Orlando</a></li>
+                        <li><a href="" onclick="GetCambios52('PacersPlayers.json')">Pacers</a></li>
+                        <li><a href="" onclick="GetCambios53('PelicansPlayers.json')">Pelicans</a></li>
+                        <li><a href="" onclick="GetCambios54('PortlandPlayers.json')">Portland</a></li>
+                        <li><a href="" onclick="GetCambios55('TorontoPlayers.json')">Raptors</a></li>
+                        <li><a href="" onclick="GetCambios56('SpursPlayers.json')">Spurs</a></li>
+                        <li><a href="" onclick="GetCambios57('SunsPlayers.json')">Suns</a></li>
+                        <li><a href="" onclick="GetCambios58('OklahomaPlayers.json')">Thunder</a></li>
+                        <li><a href="" onclick="GetCambios59('TimberwolvesPlayers.json')">Timberworld</a></li>
+                        <li><a href="" onclick="GetCambios60('WarriorsPlayers.json')">Warriors</a></li>
+                        <li><a href="" onclick="GetCambios61('WizardsPlayers.json')">Wizards</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div id="equip">
+            <button type="button" onclick="GetCambios1('Sixers.json')"><img src="imagenes/LogosEquipos/logo76.png" alt="sixers" width="250" height="250"></button>
+            <button type="button" onclick="GetCambios3('AtlantaHawks.json')"><img src="imagenes/LogosEquipos/logoatlanta.png" alt="atlanta" width="250" height="250"></button>
+            <button type="button" onclick="GetCambios4('Chicago.json')"><img src="imagenes/LogosEquipos/logobulls.jpg" alt="bulls" width="250" height="250"></button>
+            <button type="button" onclick="GetCambios5('BostonCeltics.json')"><img src="imagenes/LogosEquipos/logoceltics.jpg" alt="celtics" width="250" height="250"></button>
+            <button type="button" onclick="GetCambios6('Hornets.json')"id=""><img src="imagenes/LogosEquipos/logocharllotte.jpg" alt="charlotte" width="250" height="250"></button>
+            <button type="button" onclick="GetCambios7('Cleveland.json')"><img src="imagenes/LogosEquipos/logocleveland.jpg" alt="cleveland" width="250" height="250"></button>
+            <button type="button" onclick="GetCambios8('Clippers.json')"><img src="imagenes/LogosEquipos/logoclippers.png" alt="clippers" width="250" height="250"></button>
+            <button type="button" onclick="GetCambios9('Dallas.json')"><img src="imagenes/LogosEquipos/logodallas.jpg" alt="dallas" width="250" height="250"></button>
+            <button type="button" onclick="GetCambios10('Denver.json')"><img src="imagenes/LogosEquipos/logodenver.jpeg" alt="denver" width="250" height="250"></button>
+            <button type="button" onclick="GetCambios11('Detroit.json')"><img src="imagenes/LogosEquipos/logodetroit.jpg" alt="detroit" width="250" height="250"></button>
+            <button type="button" onclick="GetCambios12('Houston.json')"><img src="imagenes/LogosEquipos/logohouston.jpg" alt="houston" width="250" height="250"></button>
+            <button type="button" onclick="GetCambios13('Jazz.json')"><img src="imagenes/LogosEquipos/logojazz.jpg" alt="jazz" width="250" height="250"></button>
+            <button type="button" onclick="GetCambios14('Sacramento.json')"><img src="imagenes/LogosEquipos/logokings.png" alt="king" width="250" height="250"></button>
+            <button type="button" onclick="GetCambios15('Knicks.json')"><img src="imagenes/LogosEquipos/logoknicks.jpg" alt="knicks" width="250" height="250"></button>
+            <button type="button" onclick="GetCambios16('Lakers.json')"><img src="imagenes/LogosEquipos/logolakers.jpg" alt="lakers" width="250" height="250"></button>
+            <button type="button" onclick="GetCambios17('Memphis.json')"><img src="imagenes/LogosEquipos/logomemphis.jpg" alt="memphis" width="250" height="250"></button>
+            <button type="button" onclick="GetCambios18('Miami.json')"><img src="imagenes/LogosEquipos/logomiami.jpg" alt="miami" width="250" height="250"></button>
+            <button type="button" onclick="GetCambios19('Bucks.json')"><img src="imagenes/LogosEquipos/logomilwau.jpg" alt="milwau" width="250" height="250"></button>
+            <button type="button" onclick="GetCambios20('Brooklyn.json')"><img src="imagenes/LogosEquipos/logonets.jpg" alt="nets" width="250" height="250"></button>
+            <button type="button" onclick="GetCambios21('Orlando.json')"><img src="imagenes/LogosEquipos/logoorlando.gif" alt="orlando" width="250" height="250"></button>
+            <button type="button" onclick="GetCambios22('Pacers.json')"><img src="imagenes/LogosEquipos/logopacers.jpg" alt="pacers" width="250" height="250"></button>
+            <button type="button" onclick="GetCambios23('Pelicans.json')"><img src="imagenes/LogosEquipos/logopelicans.jpg" alt="pelicans" width="250" height="250"></button>
+            <button type="button" onclick="GetCambios24('Portland.json')"><img src="imagenes/LogosEquipos/logoportland.png" alt="portland" width="250" height="250"></button>
+            <button type="button" onclick="GetCambios25('Toronto.json')"><img src="imagenes/LogosEquipos/logoraptors.jpg" alt="raptors" width="250" height="250"></button>
+            <button type="button" onclick="GetCambios26('Spurs.json')"><img src="imagenes/LogosEquipos/logospurs.jpg" alt="spurs" width="250" height="250"></button>
+            <button type="button" onclick="GetCambios27('Suns.json')"><img src="imagenes/LogosEquipos/logosuns.jpg" alt="suns" width="250" height="250"></button>
+            <button type="button" onclick="GetCambios28('Oklahoma.json')"><img src="imagenes/LogosEquipos/logothunder.png" alt="thunder" width="250" height="250"></button>
+            <button type="button" onclick="GetCambios29('Timberworld.json')"><img src="imagenes/LogosEquipos/logotimberwols.gif" alt="timber" width="250" height="250"></button>
+            <button type="button" onclick="GetCambios30('Warriors.json')"><img src="imagenes/LogosEquipos/logowarriors.jpg" alt="warriors" width="250" height="250"></button>
+            <button type="button" onclick="GetCambios31('Wizards.json')"><img src="imagenes/LogosEquipos/logowizards.png" alt="wizards" width="250" height="250"></button>
+        </div>
+
+        <script>
+            function GetCambios1(jsonarchivosSixers) {
+
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                  if (this.readyState == 4 && this.status == 200) {
+                    
+              
+                    var JSONrates = JSON.parse(this.responseText);
+
+                    alert(JSONrates);
+                    
+                    //document.getElementById("resultado").innerHTML =JSONrates.rates[cambioa];
+                    
+                  }
+                };
+                
+                var URL = "/data/" + jsonarchivosSixers;
+              
+                alert(URL);
+                
+                xhttp.open("GET", URL, true);
+                xhttp.send();
+              }
+
+            function GetCambios2(jsonarchivosSixerss) {
+
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    
+
+                    var JSONrates = JSON.parse(this.responseText);
+
+                    alert(JSONrates);
+                    
+                    //document.getElementById("resultado").innerHTML =JSONrates.rates[cambioa];
+                    
+                }
+                };
+
+                var URL = "/dataplayers/" + jsonarchivosSixerss;
+
+                alert(URL);
+
+                xhttp.open("GET", URL, true);
+                xhttp.send();
+                }
+
+            function GetCambios3(jsonarchivosatlanta) {
+
+                    var xhttp = new XMLHttpRequest();
+                    xhttp.onreadystatechange = function() {
+                    if (this.readyState == 4 && this.status == 200) {
+                        
+
+                        var JSONrates = JSON.parse(this.responseText);
+
+                        alert(JSONrates);
+                        
+                        //document.getElementById("resultado").innerHTML =JSONrates.rates[cambioa];
+                        
+                    }
+                    };
+
+                    var URL = "/data/" + jsonarchivosatlanta;
+
+                    alert(URL);
+
+                    xhttp.open("GET", URL, true);
+                    xhttp.send();
+                    }
+
+            function GetCambios33(jsonarchivosatlantaa) {
+
+                        var xhttp = new XMLHttpRequest();
+                        xhttp.onreadystatechange = function() {
+                        if (this.readyState == 4 && this.status == 200) {
+                            
+
+                            var JSONrates = JSON.parse(this.responseText);
+
+                            alert(JSONrates);
+                            
+                            //document.getElementById("resultado").innerHTML =JSONrates.rates[cambioa];
+                            
+                        }
+                        };
+
+                        var URL = "/dataplayers/" + jsonarchivosatlantaa;
+
+                        alert(URL);
+
+                        xhttp.open("GET", URL, true);
+                        xhttp.send();
+                        }
+
+            function GetCambios4(jsonarchivoschicago) {
+
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    
+
+                    var JSONrates = JSON.parse(this.responseText);
+
+                    alert(JSONrates);
+                    
+                    //document.getElementById("resultado").innerHTML =JSONrates.rates[cambioa];
+                    
+                }
+                };
+
+                var URL = "/dataplayers/" + jsonarchivoschicago;
+
+                alert(URL);
+
+                xhttp.open("GET", URL, true);
+                xhttp.send();
+                }
+
+            function GetCambios34(jsonarchivoschicagoo) {
+
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    
+
+                    var JSONrates = JSON.parse(this.responseText);
+
+                    alert(JSONrates);
+                    
+                    //document.getElementById("resultado").innerHTML =JSONrates.rates[cambioa];
+                    
+                }
+                };
+
+                var URL = "/dataplayers/" + jsonarchivoschicagoo;
+
+                alert(URL);
+
+                xhttp.open("GET", URL, true);
+                xhttp.send();
+                }
+            
+        function GetCambios5(jsonarchivosboston) {
+
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    
+
+                    var JSONrates = JSON.parse(this.responseText);
+
+                    alert(JSONrates);
+                    
+                    //document.getElementById("resultado").innerHTML =JSONrates.rates[cambioa];
+                    
+                }
+                };
+
+                var URL = "/dataplayers/" + jsonarchivosboston;
+
+                alert(URL);
+
+                xhttp.open("GET", URL, true);
+                xhttp.send();
+                }
+
+        function GetCambios35(jsonarchivosbostonn) {
+
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    
+
+                    var JSONrates = JSON.parse(this.responseText);
+
+                    alert(JSONrates);
+                    
+                    //document.getElementById("resultado").innerHTML =JSONrates.rates[cambioa];
+                    
+                }
+                };
+
+                var URL = "/dataplayers/" + jsonarchivosbostonn;
+
+                alert(URL);
+
+                xhttp.open("GET", URL, true);
+                xhttp.send();
+                }
+
+        function GetCambios6(jsonarchivoshornets) {
+
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    
+
+                    var JSONrates = JSON.parse(this.responseText);
+
+                    alert(JSONrates);
+                    
+                    //document.getElementById("resultado").innerHTML =JSONrates.rates[cambioa];
+                    
+                }
+                };
+
+                var URL = "/dataplayers/" + jsonarchivoshornets;
+
+                alert(URL);
+
+                xhttp.open("GET", URL, true);
+                xhttp.send();
+                }
+
+        function GetCambios36(jsonarchivoshornetss) {
+
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    
+
+                    var JSONrates = JSON.parse(this.responseText);
+
+                    alert(JSONrates);
+                    
+                    //document.getElementById("resultado").innerHTML =JSONrates.rates[cambioa];
+                    
+                }
+                };
+
+                var URL = "/dataplayers/" + jsonarchivoshornetss;
+
+                alert(URL);
+
+                xhttp.open("GET", URL, true);
+                xhttp.send();
+                }
+
+        function GetCambios7(jsonarchivoscleveland) {
+
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    
+
+                    var JSONrates = JSON.parse(this.responseText);
+
+                    alert(JSONrates);
+                    
+                    //document.getElementById("resultado").innerHTML =JSONrates.rates[cambioa];
+                    
+                }
+                };
+
+                var URL = "/dataplayers/" + jsonarchivoscleveland;
+
+                alert(URL);
+
+                xhttp.open("GET", URL, true);
+                xhttp.send();
+                }
+
+        function GetCambios37(jsonarchivosclevelandd) {
+
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    
+
+                    var JSONrates = JSON.parse(this.responseText);
+
+                    alert(JSONrates);
+                    
+                    //document.getElementById("resultado").innerHTML =JSONrates.rates[cambioa];
+                    
+                }
+                };
+
+                var URL = "/dataplayers/" + jsonarchivosclevelandd;
+
+                alert(URL);
+
+                xhttp.open("GET", URL, true);
+                xhttp.send();
+                }
+            
+        function GetCambios8(jsonarchivosclippers) {
+
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    
+
+                    var JSONrates = JSON.parse(this.responseText);
+
+                    alert(JSONrates);
+                    
+                    //document.getElementById("resultado").innerHTML =JSONrates.rates[cambioa];
+                    
+                }
+                };
+
+                var URL = "/dataplayers/" + jsonarchivosclippers;
+
+                alert(URL);
+
+                xhttp.open("GET", URL, true);
+                xhttp.send();
+                }
+
+        function GetCambios38(jsonarchivosclipperss) {
+
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    
+
+                    var JSONrates = JSON.parse(this.responseText);
+
+                    alert(JSONrates);
+                    
+                    //document.getElementById("resultado").innerHTML =JSONrates.rates[cambioa];
+                    
+                }
+                };
+
+                var URL = "/dataplayers/" + jsonarchivosclipperss;
+
+                alert(URL);
+
+                xhttp.open("GET", URL, true);
+                xhttp.send();
+                }
+
+        function GetCambios9(jsonarchivosdallas) {
+
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    
+
+                    var JSONrates = JSON.parse(this.responseText);
+
+                    alert(JSONrates);
+                    
+                    //document.getElementById("resultado").innerHTML =JSONrates.rates[cambioa];
+                    
+                }
+                };
+
+                var URL = "/dataplayers/" + jsonarchivosdallas;
+
+                alert(URL);
+
+                xhttp.open("GET", URL, true);
+                xhttp.send();
+                }
+
+        function GetCambios39(jsonarchivosdallass) {
+
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    
+
+                    var JSONrates = JSON.parse(this.responseText);
+
+                    alert(JSONrates);
+                    
+                    //document.getElementById("resultado").innerHTML =JSONrates.rates[cambioa];
+                    
+                }
+                };
+
+                var URL = "/dataplayers/" + jsonarchivosdallass;
+
+                alert(URL);
+
+                xhttp.open("GET", URL, true);
+                xhttp.send();
+                }
+
+        function GetCambios10(jsonarchivosdenver) {
+
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    
+
+                    var JSONrates = JSON.parse(this.responseText);
+
+                    alert(JSONrates);
+                    
+                    //document.getElementById("resultado").innerHTML =JSONrates.rates[cambioa];
+                    
+                }
+                };
+
+                var URL = "/dataplayers/" + jsonarchivosdenver;
+
+                alert(URL);
+
+                xhttp.open("GET", URL, true);
+                xhttp.send();
+                }
+
+                function GetCambios40(jsonarchivosdenverr) {
+
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    
+
+                    var JSONrates = JSON.parse(this.responseText);
+
+                    alert(JSONrates);
+                    
+                    //document.getElementById("resultado").innerHTML =JSONrates.rates[cambioa];
+                    
+                }
+                };
+
+                var URL = "/dataplayers/" + jsonarchivosdenverr;
+
+                alert(URL);
+
+                xhttp.open("GET", URL, true);
+                xhttp.send();
+                }
+
+        function GetCambios11(jsonarchivosdetroitt) {
+
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    
+
+                    var JSONrates = JSON.parse(this.responseText);
+
+                    alert(JSONrates);
+                    
+                    //document.getElementById("resultado").innerHTML =JSONrates.rates[cambioa];
+                    
+                }
+                };
+
+                var URL = "/dataplayers/" + jsonarchivosdetroit;
+
+                alert(URL);
+
+                xhttp.open("GET", URL, true);
+                xhttp.send();
+                }
+
+        function GetCambios41(jsonarchivosdetroitt) {
+
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    
+
+                    var JSONrates = JSON.parse(this.responseText);
+
+                    alert(JSONrates);
+                    
+                    //document.getElementById("resultado").innerHTML =JSONrates.rates[cambioa];
+                    
+                }
+                };
+
+                var URL = "/dataplayers/" + jsonarchivosdetroitt;
+
+                alert(URL);
+
+                xhttp.open("GET", URL, true);
+                xhttp.send();
+                }
+
+        function GetCambios12(jsonarchivoshouston) {
+
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    
+
+                    var JSONrates = JSON.parse(this.responseText);
+
+                    alert(JSONrates);
+                    
+                    //document.getElementById("resultado").innerHTML =JSONrates.rates[cambioa];
+                    
+                }
+                };
+
+                var URL = "/dataplayers/" + jsonarchivoshouston;
+
+                alert(URL);
+
+                xhttp.open("GET", URL, true);
+                xhttp.send();
+                }
+
+        function GetCambios42(jsonarchivoshoustonn) {
+
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    
+
+                    var JSONrates = JSON.parse(this.responseText);
+
+                    alert(JSONrates);
+                    
+                    //document.getElementById("resultado").innerHTML =JSONrates.rates[cambioa];
+                    
+                }
+                };
+
+                var URL = "/dataplayers/" + jsonarchivoshoustonn;
+
+                alert(URL);
+
+                xhttp.open("GET", URL, true);
+                xhttp.send();
+                }
+
+        function GetCambios13(jsonarchivosjazzz) {
+
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    
+
+                    var JSONrates = JSON.parse(this.responseText);
+
+                    alert(JSONrates);
+                    
+                    //document.getElementById("resultado").innerHTML =JSONrates.rates[cambioa];
+                    
+                }
+                };
+
+                var URL = "/dataplayers/" + jsonarchivosjazz;
+
+                alert(URL);
+
+                xhttp.open("GET", URL, true);
+                xhttp.send();
+                }
+
+        function GetCambios43(jsonarchivosjazzz) {
+
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    
+
+                    var JSONrates = JSON.parse(this.responseText);
+
+                    alert(JSONrates);
+                    
+                    //document.getElementById("resultado").innerHTML =JSONrates.rates[cambioa];
+                    
+                }
+                };
+
+                var URL = "/dataplayers/" + jsonarchivosjazzz;
+
+                alert(URL);
+
+                xhttp.open("GET", URL, true);
+                xhttp.send();
+                }
+
+        function GetCambios14(jsonarchivosSacramento) {
+
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    
+
+                    var JSONrates = JSON.parse(this.responseText);
+
+                    alert(JSONrates);
+                    
+                    //document.getElementById("resultado").innerHTML =JSONrates.rates[cambioa];
+                    
+                }
+                };
+
+                var URL = "/dataplayers/" + jsonarchivosSacramento;
+
+                alert(URL);
+
+                xhttp.open("GET", URL, true);
+                xhttp.send();
+                }
+
+        function GetCambios44(jsonarchivosSacramentoo) {
+
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    
+
+                    var JSONrates = JSON.parse(this.responseText);
+
+                    alert(JSONrates);
+                    
+                    //document.getElementById("resultado").innerHTML =JSONrates.rates[cambioa];
+                    
+                }
+                };
+
+                var URL = "/dataplayers/" + jsonarchivosSacramentoo;
+
+                alert(URL);
+
+                xhttp.open("GET", URL, true);
+                xhttp.send();
+                }
+
+        function GetCambios15(jsonarchivosknicks) {
+
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    
+
+                    var JSONrates = JSON.parse(this.responseText);
+
+                    alert(JSONrates);
+                    
+                    //document.getElementById("resultado").innerHTML =JSONrates.rates[cambioa];
+                    
+                }
+                };
+
+                var URL = "/dataplayers/" + jsonarchivosknicks;
+
+                alert(URL);
+
+                xhttp.open("GET", URL, true);
+                xhttp.send();
+                }
+
+                function GetCambios45(jsonarchivosknickss) {
+
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    
+
+                    var JSONrates = JSON.parse(this.responseText);
+
+                    alert(JSONrates);
+                    
+                    //document.getElementById("resultado").innerHTML =JSONrates.rates[cambioa];
+                    
+                }
+                };
+
+                var URL = "/dataplayers/" + jsonarchivosknickss;
+
+                alert(URL);
+
+                xhttp.open("GET", URL, true);
+                xhttp.send();
+                }
+
+        function GetCambios16(jsonarchivoslakers) {
+
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    
+
+                    var JSONrates = JSON.parse(this.responseText);
+
+                    alert(JSONrates);
+                    
+                    //document.getElementById("resultado").innerHTML =JSONrates.rates[cambioa];
+                    
+                }
+                };
+
+                var URL = "/dataplayers/" + jsonarchivoslakers;
+
+                alert(URL);
+
+                xhttp.open("GET", URL, true);
+                xhttp.send();
+                }
+
+        function GetCambios46(jsonarchivoslakerss) {
+
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    
+
+                    var JSONrates = JSON.parse(this.responseText);
+
+                    alert(JSONrates);
+                    
+                    //document.getElementById("resultado").innerHTML =JSONrates.rates[cambioa];
+                    
+                }
+                };
+
+                var URL = "/dataplayers/" + jsonarchivoslakerss;
+
+                alert(URL);
+
+                xhttp.open("GET", URL, true);
+                xhttp.send();
+                }
+
+        function GetCambios17(jsonarchivosmemphiss) {
+
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    
+
+                    var JSONrates = JSON.parse(this.responseText);
+
+                    alert(JSONrates);
+                    
+                    //document.getElementById("resultado").innerHTML =JSONrates.rates[cambioa];
+                    
+                }
+                };
+
+                var URL = "/dataplayers/" + jsonarchivosmemphiss;
+
+                alert(URL);
+
+                xhttp.open("GET", URL, true);
+                xhttp.send();
+                }
+
+        function GetCambios47(jsonarchivosmemphiss) {
+
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    
+
+                    var JSONrates = JSON.parse(this.responseText);
+
+                    alert(JSONrates);
+                    
+                    //document.getElementById("resultado").innerHTML =JSONrates.rates[cambioa];
+                    
+                }
+                };
+
+                var URL = "/dataplayers/" + jsonarchivosmemphiss;
+
+                alert(URL);
+
+                xhttp.open("GET", URL, true);
+                xhttp.send();
+                }
+
+        function GetCambios46(jsonarchivoslakerss) {
+
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    
+
+                    var JSONrates = JSON.parse(this.responseText);
+
+                    alert(JSONrates);
+                    
+                    //document.getElementById("resultado").innerHTML =JSONrates.rates[cambioa];
+                    
+                }
+                };
+
+                var URL = "/dataplayers/" + jsonarchivoslakerss;
+
+                alert(URL);
+
+                xhttp.open("GET", URL, true);
+                xhttp.send();
+                }
+
+        function GetCambios18(jsonarchivosmiami) {
+
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    
+
+                    var JSONrates = JSON.parse(this.responseText);
+
+                    alert(JSONrates);
+                    
+                    //document.getElementById("resultado").innerHTML =JSONrates.rates[cambioa];
+                    
+                }
+                };
+
+                var URL = "/dataplayers/" + jsonarchivosmiami;
+
+                alert(URL);
+
+                xhttp.open("GET", URL, true);
+                xhttp.send();
+                }
+
+        function GetCambios48(jsonarchivosmiamii) {
+
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    
+
+                    var JSONrates = JSON.parse(this.responseText);
+
+                    alert(JSONrates);
+                    
+                    //document.getElementById("resultado").innerHTML =JSONrates.rates[cambioa];
+                    
+                }
+                };
+
+                var URL = "/dataplayers/" + jsonarchivosmiamii;
+
+                alert(URL);
+
+                xhttp.open("GET", URL, true);
+                xhttp.send();
+                }
+
+        function GetCambios19(jsonarchivosbuscks) {
+
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    
+
+                    var JSONrates = JSON.parse(this.responseText);
+
+                    alert(JSONrates);
+                    
+                    //document.getElementById("resultado").innerHTML =JSONrates.rates[cambioa];
+                    
+                }
+                };
+
+                var URL = "/dataplayers/" + jsonarchivosbuscks;
+
+                alert(URL);
+
+                xhttp.open("GET", URL, true);
+                xhttp.send();
+                }
+
+        function GetCambios49(jsonarchivosbusckss) {
+
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    
+
+                    var JSONrates = JSON.parse(this.responseText);
+
+                    alert(JSONrates);
+                    
+                    //document.getElementById("resultado").innerHTML =JSONrates.rates[cambioa];
+                    
+                }
+                };
+
+                var URL = "/dataplayers/" + jsonarchivosbusckss;
+
+                alert(URL);
+
+                xhttp.open("GET", URL, true);
+                xhttp.send();
+                }
+
+        function GetCambios20(jsonarchivosbrooklyn) {
+
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    
+
+                    var JSONrates = JSON.parse(this.responseText);
+
+                    alert(JSONrates);
+                    
+                    //document.getElementById("resultado").innerHTML =JSONrates.rates[cambioa];
+                    
+                }
+                };
+
+                var URL = "/dataplayers/" + jsonarchivosbrooklyn;
+
+                alert(URL);
+
+                xhttp.open("GET", URL, true);
+                xhttp.send();
+                }
+
+        function GetCambios50(jsonarchivosbrooklynn) {
+
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    
+
+                    var JSONrates = JSON.parse(this.responseText);
+
+                    alert(JSONrates);
+                    
+                    //document.getElementById("resultado").innerHTML =JSONrates.rates[cambioa];
+                    
+                }
+                };
+
+                var URL = "/dataplayers/" + jsonarchivosbrooklynn;
+
+                alert(URL);
+
+                xhttp.open("GET", URL, true);
+                xhttp.send();
+                }
+
+        function GetCambios21(jsonarchivosorlando) {
+
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    
+
+                    var JSONrates = JSON.parse(this.responseText);
+
+                    alert(JSONrates);
+                    
+                    //document.getElementById("resultado").innerHTML =JSONrates.rates[cambioa];
+                    
+                }
+                };
+
+                var URL = "/dataplayers/" + jsonarchivosorlando;
+
+                alert(URL);
+
+                xhttp.open("GET", URL, true);
+                xhttp.send();
+                }
+
+        function GetCambios51(jsonarchivosorlandoo) {
+
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    
+
+                    var JSONrates = JSON.parse(this.responseText);
+
+                    alert(JSONrates);
+                    
+                    //document.getElementById("resultado").innerHTML =JSONrates.rates[cambioa];
+                    
+                }
+                };
+
+                var URL = "/dataplayers/" + jsonarchivosorlandoo;
+
+                alert(URL);
+
+                xhttp.open("GET", URL, true);
+                xhttp.send();
+                }
+
+        function GetCambios22(jsonarchivospacers) {
+
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    
+
+                    var JSONrates = JSON.parse(this.responseText);
+
+                    alert(JSONrates);
+                    
+                    //document.getElementById("resultado").innerHTML =JSONrates.rates[cambioa];
+                    
+                }
+                };
+
+                var URL = "/dataplayers/" + jsonarchivospacers;
+
+                alert(URL);
+
+                xhttp.open("GET", URL, true);
+                xhttp.send();
+                }
+
+        function GetCambios52(jsonarchivospacerss) {
+
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    
+
+                    var JSONrates = JSON.parse(this.responseText);
+
+                    alert(JSONrates);
+                    
+                    //document.getElementById("resultado").innerHTML =JSONrates.rates[cambioa];
+                    
+                }
+                };
+
+                var URL = "/dataplayers/" + jsonarchivospacerss;
+
+                alert(URL);
+
+                xhttp.open("GET", URL, true);
+                xhttp.send();
+                }
+
+        function GetCambios23(jsonarchivospelicans) {
+
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    
+
+                    var JSONrates = JSON.parse(this.responseText);
+
+                    alert(JSONrates);
+                    
+                    //document.getElementById("resultado").innerHTML =JSONrates.rates[cambioa];
+                    
+                }
+                };
+
+                var URL = "/dataplayers/" + jsonarchivospelicans;
+
+                alert(URL);
+
+                xhttp.open("GET", URL, true);
+                xhttp.send();
+                }
+
+        function GetCambios53(jsonarchivospelicanss) {
+
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    
+
+                    var JSONrates = JSON.parse(this.responseText);
+
+                    alert(JSONrates);
+                    
+                    //document.getElementById("resultado").innerHTML =JSONrates.rates[cambioa];
+                    
+                }
+                };
+
+                var URL = "/dataplayers/" + jsonarchivospelicanss;
+
+                alert(URL);
+
+                xhttp.open("GET", URL, true);
+                xhttp.send();
+                }
+
+        function GetCambios24(jsonarchivosportlandd) {
+
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    
+
+                    var JSONrates = JSON.parse(this.responseText);
+
+                    alert(JSONrates);
+                    
+                    //document.getElementById("resultado").innerHTML =JSONrates.rates[cambioa];
+                    
+                }
+                };
+
+                var URL = "/dataplayers/" + jsonarchivosportland;
+
+                alert(URL);
+
+                xhttp.open("GET", URL, true);
+                xhttp.send();
+                }
+
+        function GetCambios54(jsonarchivosportlandd) {
+
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    
+
+                    var JSONrates = JSON.parse(this.responseText);
+
+                    alert(JSONrates);
+                    
+                    //document.getElementById("resultado").innerHTML =JSONrates.rates[cambioa];
+                    
+                }
+                };
+
+                var URL = "/dataplayers/" + jsonarchivosportlandd;
+
+                alert(URL);
+
+                xhttp.open("GET", URL, true);
+                xhttp.send();
+                }
+
+        function GetCambios25(jsonarchivostoronto) {
+
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    
+
+                    var JSONrates = JSON.parse(this.responseText);
+
+                    alert(JSONrates);
+                    
+                    //document.getElementById("resultado").innerHTML =JSONrates.rates[cambioa];
+                    
+                }
+                };
+
+                var URL = "/dataplayers/" + jsonarchivostoronto;
+
+                alert(URL);
+
+                xhttp.open("GET", URL, true);
+                xhttp.send();
+                }
+
+        function GetCambios55(jsonarchivostorontoo) {
+
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    
+
+                    var JSONrates = JSON.parse(this.responseText);
+
+                    alert(JSONrates);
+                    
+                    //document.getElementById("resultado").innerHTML =JSONrates.rates[cambioa];
+                    
+                }
+                };
+
+                var URL = "/dataplayers/" + jsonarchivostorontoo;
+
+                alert(URL);
+
+                xhttp.open("GET", URL, true);
+                xhttp.send();
+                }
+
+        function GetCambios26(jsonarchivosspurs) {
+
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    
+
+                    var JSONrates = JSON.parse(this.responseText);
+
+                    alert(JSONrates);
+                    
+                    //document.getElementById("resultado").innerHTML =JSONrates.rates[cambioa];
+                    
+                }
+                };
+
+                var URL = "/dataplayers/" + jsonarchivosspurs;
+
+                alert(URL);
+
+                xhttp.open("GET", URL, true);
+                xhttp.send();
+                }
+
+        function GetCambios56(jsonarchivosspurss) {
+
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    
+
+                    var JSONrates = JSON.parse(this.responseText);
+
+                    alert(JSONrates);
+                    
+                    //document.getElementById("resultado").innerHTML =JSONrates.rates[cambioa];
+                    
+                }
+                };
+
+                var URL = "/dataplayers/" + jsonarchivosspurss;
+
+                alert(URL);
+
+                xhttp.open("GET", URL, true);
+                xhttp.send();
+                }
+
+        function GetCambios27(jsonarchivossuns) {
+
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    
+
+                    var JSONrates = JSON.parse(this.responseText);
+
+                    alert(JSONrates);
+                    
+                    //document.getElementById("resultado").innerHTML =JSONrates.rates[cambioa];
+                    
+                }
+                };
+
+                var URL = "/dataplayers/" + jsonarchivossuns;
+
+                alert(URL);
+
+                xhttp.open("GET", URL, true);
+                xhttp.send();
+                }
+
+        function GetCambios57(jsonarchivossunss) {
+
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    
+
+                    var JSONrates = JSON.parse(this.responseText);
+
+                    alert(JSONrates);
+                    
+                    //document.getElementById("resultado").innerHTML =JSONrates.rates[cambioa];
+                    
+                }
+                };
+
+                var URL = "/dataplayers/" + jsonarchivossunss;
+
+                alert(URL);
+
+                xhttp.open("GET", URL, true);
+                xhttp.send();
+                }
+
+        function GetCambios28(jsonarchivosoklahomaa) {
+
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    
+
+                    var JSONrates = JSON.parse(this.responseText);
+
+                    alert(JSONrates);
+                    
+                    //document.getElementById("resultado").innerHTML =JSONrates.rates[cambioa];
+                    
+                }
+                };
+
+                var URL = "/dataplayers/" + jsonarchivosoklahoma;
+
+                alert(URL);
+
+                xhttp.open("GET", URL, true);
+                xhttp.send();
+                }
+
+        function GetCambios58(jsonarchivosoklahomaa) {
+
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    
+
+                    var JSONrates = JSON.parse(this.responseText);
+
+                    alert(JSONrates);
+                    
+                    //document.getElementById("resultado").innerHTML =JSONrates.rates[cambioa];
+                    
+                }
+                };
+
+                var URL = "/dataplayers/" + jsonarchivosoklahomaa;
+
+                alert(URL);
+
+                xhttp.open("GET", URL, true);
+                xhttp.send();
+                }
+
+        function GetCambios29(jsonarchivostimberworld) {
+
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    
+
+                    var JSONrates = JSON.parse(this.responseText);
+
+                    alert(JSONrates);
+                    
+                    //document.getElementById("resultado").innerHTML =JSONrates.rates[cambioa];
+                    
+                }
+                };
+
+                var URL = "/dataplayers/" + jsonarchivostimberworld;
+
+                alert(URL);
+
+                xhttp.open("GET", URL, true);
+                xhttp.send();
+                }
+
+        function GetCambios59(jsonarchivostimberworldd) {
+
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    
+
+                    var JSONrates = JSON.parse(this.responseText);
+
+                    alert(JSONrates);
+                    
+                    //document.getElementById("resultado").innerHTML =JSONrates.rates[cambioa];
+                    
+                }
+                };
+
+                var URL = "/dataplayers/" + jsonarchivostimberworldd;
+
+                alert(URL);
+
+                xhttp.open("GET", URL, true);
+                xhttp.send();
+                }
+
+        function GetCambios30(jsonarchivoswarriorss) {
+
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    
+
+                    var JSONrates = JSON.parse(this.responseText);
+
+                    alert(JSONrates);
+                    
+                    //document.getElementById("resultado").innerHTML =JSONrates.rates[cambioa];
+                    
+                }
+                };
+
+                var URL = "/dataplayers/" + jsonarchivoswarriors;
+
+                alert(URL);
+
+                xhttp.open("GET", URL, true);
+                xhttp.send();
+                }
+
+        function GetCambios60(jsonarchivoswarriorss) {
+
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    
+
+                    var JSONrates = JSON.parse(this.responseText);
+
+                    alert(JSONrates);
+                    
+                    //document.getElementById("resultado").innerHTML =JSONrates.rates[cambioa];
+                    
+                }
+                };
+
+                var URL = "/dataplayers/" + jsonarchivoswarriorss;
+
+                alert(URL);
+
+                xhttp.open("GET", URL, true);
+                xhttp.send();
+                }
+
+        function GetCambios31(jsonarchivoswizards) {
+
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    
+
+                    var JSONrates = JSON.parse(this.responseText);
+
+                    alert(JSONrates);
+                    
+                    //document.getElementById("resultado").innerHTML =JSONrates.rates[cambioa];
+                    
+                }
+                };
+
+                var URL = "/dataplayers/" + jsonarchivoswizards;
+
+                alert(URL);
+
+                xhttp.open("GET", URL, true);
+                xhttp.send();
+                }
+
+        function GetCambios61(jsonarchivoswizardss) {
+
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    
+
+                    var JSONrates = JSON.parse(this.responseText);
+
+                    alert(JSONrates);
+                    
+                    //document.getElementById("resultado").innerHTML =JSONrates.rates[cambioa];
+                    
+                }
+                };
+
+                var URL = "/dataplayers/" + jsonarchivoswizardss;
+
+                alert(URL);
+
+                xhttp.open("GET", URL, true);
+                xhttp.send();
+                }
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,26 @@
+[
+  {
+  "firstName": "Thaddeus",
+  "lastName": "Young",
+  "playerId": 201152,
+  "teamId": 1610612741
+},
+{
+  "firstName": "Shaquille",
+  "lastName": "Harrison",
+  "playerId": 1627885,
+  "teamId": 1610612741
+},
+{
+  "firstName": "Luke",
+  "lastName": "Kornet",
+  "playerId": 1628436,
+  "teamId": 1610612741
+},
+{
+  "firstName": "Zach",
+  "lastName": "LaVine",
+  "playerId": 203897,
+  "teamId": 1610612741
+},
+]

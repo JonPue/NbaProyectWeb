@@ -1,0 +1,33 @@
+[
+  {
+    "firstName": "Nikola",
+    "lastName": "Vucevic",
+    "playerId": 202696,
+    "teamId": 1610612753
+  },
+  {
+    "firstName": "Nikola",
+    "lastName": "Vucevic",
+    "playerId": 202696,
+    "teamId": 1610612753
+  },
+  {
+    "firstName": "Markelle",
+    "lastName": "Fultz",
+    "playerId": 1628365,
+    "teamId": 1610612753
+  },
+  {
+    "firstName": "Aaron",
+    "lastName": "Gordon",
+    "playerId": 203932,
+    "teamId": 1610612753
+  },
+  {
+    "firstName": "Evan",
+    "lastName": "Fournier",
+    "playerId": 203095,
+    "teamId": 1610612753
+  }
+
+]

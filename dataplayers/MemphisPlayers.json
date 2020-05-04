@@ -1,0 +1,32 @@
+[
+  {
+    "firstName": "Jonas",
+    "lastName": "Valanciunas",
+    "playerId": 202685,
+    "teamId": 1610612763
+  },
+  {
+    "firstName": "Ja",
+    "lastName": "Morant",
+    "playerId": 1629630,
+    "teamId": 1610612763
+  },
+  {
+    "firstName": "Yuta",
+    "lastName": "Watanabe",
+    "playerId": 1629139,
+    "teamId": 1610612763
+  },
+  {
+    "firstName": "Grayson",
+    "lastName": "Allen",
+    "playerId": 1628960,
+    "teamId": 1610612763
+  },
+  {
+    "firstName": "Kyle",
+    "lastName": "Anderson",
+    "playerId": 203937,
+    "teamId": 1610612763
+  }
+]

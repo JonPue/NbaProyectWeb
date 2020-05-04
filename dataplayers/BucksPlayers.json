@@ -1,0 +1,39 @@
+[
+  {
+    "firstName": "Giannis",
+    "lastName": "Antetokounmpo",
+    "playerId": 203507,
+    "teamId": 1610612749
+  },
+  {
+    "firstName": "George",
+    "lastName": "Hill",
+    "playerId": 201588,
+    "teamId": 1610612749
+  },
+  {
+    "firstName": "Ersan",
+    "lastName": "Ilyasova",
+    "playerId": 101141,
+    "teamId": 1610612749
+  },
+  {
+    "firstName": "Kyle",
+    "lastName": "Korver",
+    "playerId": 2594,
+    "teamId": 1610612749
+  },
+  {
+    "firstName": "Brook",
+    "lastName": "Lopez",
+    "playerId": 201572,
+    "teamId": 1610612749
+  },
+
+  {
+    "firstName": "Robin",
+    "lastName": "Lopez",
+    "playerId": 201577,
+    "teamId": 1610612749
+  }
+]

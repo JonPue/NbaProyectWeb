@@ -1,0 +1,44 @@
+[
+  {
+    "firstName": "Kenrich",
+    "lastName": "Williams",
+    "playerId": 1629026,
+    "teamId": 1610612740
+  },
+  {
+    "firstName": "Zion",
+    "lastName": "Williamson",
+    "playerId": 1629627,
+    "teamId": 1610612740
+  },
+  {
+    "firstName": "Lonzo",
+    "lastName": "Ball",
+    "playerId": 1628366,
+    "teamId": 1610612740
+  },
+  {
+    "firstName": "Derrick",
+    "lastName": "Favors",
+    "playerId": 202324,
+    "teamId": 1610612740
+  },
+  {
+    "firstName": "Josh",
+    "lastName": "Hart",
+    "playerId": 1628404,
+    "teamId": 1610612740
+  },
+  {
+    "firstName": "Brandon",
+    "lastName": "Ingram",
+    "playerId": 1627742,
+    "teamId": 1610612740
+  },
+  {
+    "firstName": "Nicolo",
+    "lastName": "Melli",
+    "playerId": 1629740,
+    "teamId": 1610612740
+  }
+]

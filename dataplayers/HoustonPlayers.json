@@ -1,0 +1,32 @@
+[
+  {
+    "firstName": "Austin",
+    "lastName": "Rivers",
+    "playerId": 203085,
+    "teamId": 1610612745
+  },
+  {
+    "firstName": "James",
+    "lastName": "Harden",
+    "playerId": 201935,
+    "teamId": 1610612745
+  },
+  {
+    "firstName": "Eric",
+    "lastName": "Gordon",
+    "playerId": 201569,
+    "teamId": 1610612745
+  },
+  {
+    "firstName": "P.J.",
+    "lastName": "Tucker",
+    "playerId": 200782,
+    "teamId": 1610612745
+  },
+  {
+    "firstName": "Russell",
+    "lastName": "Westbrook",
+    "playerId": 201566,
+    "teamId": 1610612745
+  }
+]

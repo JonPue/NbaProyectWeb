@@ -1,0 +1,38 @@
+[
+  {
+    "firstName": "Derrick",
+    "lastName": "White",
+    "playerId": 1628401,
+    "teamId": 1610612759
+  },
+  {
+    "firstName": "LaMarcus",
+    "lastName": "Aldridge",
+    "playerId": 200746,
+    "teamId": 1610612759
+  },
+  {
+    "firstName": "Marco",
+    "lastName": "Belinelli",
+    "playerId": 201158,
+    "teamId": 1610612759
+  },
+  {
+    "firstName": "DeMarre",
+    "lastName": "Carroll",
+    "playerId": 201960,
+    "teamId": 1610612759
+  },
+  {
+    "firstName": "DeMar",
+    "lastName": "DeRozan",
+    "playerId": 201942,
+    "teamId": 1610612759
+  },
+  {
+    "firstName": "Drew",
+    "lastName": "Eubanks",
+    "playerId": 1629234,
+    "teamId": 1610612759
+  }
+]

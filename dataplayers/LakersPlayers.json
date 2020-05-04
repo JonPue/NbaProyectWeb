@@ -1,0 +1,50 @@
+[
+  {
+    "firstName": "Rajon",
+    "lastName": "Rondo",
+    "playerId": 200765,
+    "teamId": 1610612747
+  },
+  {
+    "firstName": "Alex",
+    "lastName": "Caruso",
+    "playerId": 1627936,
+    "teamId": 1610612747
+  },
+  {
+    "firstName": "Anthony",
+    "lastName": "Davis",
+    "playerId": 203076,
+    "teamId": 1610612747
+  },
+  {
+    "firstName": "Danny",
+    "lastName": "Green",
+    "playerId": 201980,
+    "teamId": 1610612747
+  },
+  {
+    "firstName": "LeBron",
+    "lastName": "James",
+    "playerId": 2544,
+    "teamId": 1610612747
+  },
+  {
+    "firstName": "Kyle",
+    "lastName": "Kuzma",
+    "playerId": 1628398,
+    "teamId": 1610612747
+  },
+  {
+    "firstName": "JaVale",
+    "lastName": "McGee",
+    "playerId": 201580,
+    "teamId": 1610612747
+  },
+  {
+    "firstName": "Rajon",
+    "lastName": "Rondo",
+    "playerId": 200765,
+    "teamId": 1610612747
+  }
+]

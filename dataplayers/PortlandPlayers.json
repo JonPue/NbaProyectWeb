@@ -1,0 +1,44 @@
+[
+  {
+    "firstName": "Anfernee",
+    "lastName": "Simons",
+    "playerId": 1629014,
+    "teamId": 1610612757
+  },
+  {
+    "firstName": "Gary",
+    "lastName": "Trent Jr.",
+    "playerId": 1629018,
+    "teamId": 1610612757
+  },
+  {
+    "firstName": "Carmelo",
+    "lastName": "Anthony",
+    "playerId": 2546,
+    "teamId": 1610612757
+  },
+  {
+    "firstName": "Zach",
+    "lastName": "Collins",
+    "playerId": 1628380,
+    "teamId": 1610612757
+  },
+  {
+    "firstName": "Damian",
+    "lastName": "Lillard",
+    "playerId": 203081,
+    "teamId": 1610612757
+  },
+  {
+    "firstName": "CJ",
+    "lastName": "McCollum",
+    "playerId": 203468,
+    "teamId": 1610612757
+  },
+  {
+    "firstName": "Jusuf",
+    "lastName": "Nurkic",
+    "playerId": 203994,
+    "teamId": 1610612757
+  }
+]
